@@ -1,6 +1,6 @@
 self.addEventListener('push', () => {
   var options = {
-    body: 'This notification was generated from a push!',
+    body: 'Welcome to JCP 3.0 ',
     icon: 'images/example.png',
     vibrate: [100, 50, 100],
     data: {
@@ -12,5 +12,6 @@ self.addEventListener('push', () => {
       {action: 'close', title: 'Close'}
     ]
   };
-  self.registration.showNotification('Hello world!', options);
+  console.log("Hello Bello")
+  self.registration.showNotification('Hello JCP member', options);
 });
