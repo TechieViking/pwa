@@ -8,10 +8,8 @@ self.addEventListener('push', () => {
       primaryKey: '2'
     },
     actions: [
-      {action: 'explore', title: 'Explore this new world',
-        icon: 'images/checkmark.png'},
-      {action: 'close', title: 'Close',
-        icon: 'images/xmark.png'},
+      {action: 'explore', title: 'Explore this new world'},
+      {action: 'close', title: 'Close'}
     ]
   };
   self.registration.showNotification('Hello world!', options);
